@@ -36,7 +36,7 @@
   outputs =
     inputs@{ nixpkgs, haskell-nix, CHaP, iohk-nix, cardano-node, flake-parts, ... }:
     let
-      defaultSystems = [ "x86_64-linux" "x86_64-darwin" ];
+      defaultSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-darwin"];
 
       perSystem = nixpkgs.lib.genAttrs defaultSystems;
 
